@@ -127,9 +127,15 @@ The `results/igv_review/` directory contains five candidate review notes and
 
 ### `qc/`
 
-Raw and trimmed-read quality reports were generated during the original
-analysis. Selected MultiQC reports may be added to the public repository if
-they provide useful summary information without unnecessary duplication.
+The repository includes two MultiQC HTML reports:
+
+- `qc/multiqc_raw/multiqc_report.html` — raw-read quality summary.
+- `qc/multiqc_trimmed/multiqc_report.html` — post-trimming quality summary.
+
+The underlying FastQC and fastp reports and MultiQC data directories are not
+currently tracked in Git. The HTML reports document the QC summaries from the
+original analysis; reproducing them requires the corresponding input data,
+software, and workflow settings.
 
 ## Interpreting the results
 
