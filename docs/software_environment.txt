@@ -21,6 +21,7 @@ fastp 0.22.0
 multiqc, version 1.35
 
 VEP version:
+Ensembl VEP release: 116
 #----------------------------------#
 # ENSEMBL VARIANT EFFECT PREDICTOR #
 #----------------------------------#
