@@ -1,0 +1,38 @@
+#<METADATA>Ln prior of deletion of length 10=-17.759623041370407
+#<METADATA>Ln prior of deletion of length 9=-16.843228676398883
+#<METADATA>Ln prior of deletion of length 8=-18.43340777050996
+#<METADATA>Ln prior of deletion of length 7=-17.354054300164865
+#<METADATA>Ln prior of deletion of length 6=-17.354054300164893
+#<METADATA>Ln prior of deletion of length 5=-17.354115044429506
+#<METADATA>Ln prior of deletion of length 4=-17.03551933302107
+#<METADATA>Ln prior of deletion of length 3=-17.13807472229624
+#<METADATA>Ln prior of deletion of length 2=-16.152849955565436
+#<METADATA>Ln prior of deletion of length 1=-15.616364251617165
+#<METADATA>Ln prior of SNV=-11.19322866456747
+#<METADATA>Ln prior of insertion of length 1=-16.190152304712207
+#<METADATA>Ln prior of insertion of length 2=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 3=-18.452664677943545
+#<METADATA>Ln prior of insertion of length 4=-17.904158147090197
+#<METADATA>Ln prior of insertion of length 5=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 6=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 7=-18.45266442439324
+#<METADATA>Ln prior of insertion of length 8=-18.45702629483353
+#<METADATA>Ln prior of insertion of length 9=-20.72326583694641
+#<METADATA>Ln prior of insertion of length 10=-20.72326583694641
+#<METADATA>Background beta-binomial cluster=weight = 0.5027, alpha = 1.23, beta = 0.50
+#<METADATA>High-AF beta-binomial cluster=weight = 0.0022, alpha = 10.22, beta = 0.50
+#<METADATA>Binomial cluster=weight = 0.2232, mean = 0.257
+#<METADATA>Binomial cluster=weight = 0.2025, mean = 0.452
+#<METADATA>Binomial cluster=weight = 0.0694, mean = 0.990
+#<METADATA>threshold=0.511
+#<METADATA>fdr=0.037
+#<METADATA>sensitivity=0.975
+filter	FP	FDR	FN	FNR
+weak_evidence	2.56	0.0	17.57	0.01
+strand_bias	51.27	0.03	15.19	0.01
+contamination	0.01	0.0	0.01	0.0
+normal_artifact	0.79	0.0	1.51	0.0
+orientation	1.09	0.0	1.6	0.0
+slippage	0.0	0.0	0.0	0.0
+haplotype	1.5	0.0	0.57	0.0
+germline	3.63	0.0	4.67	0.0
