@@ -1,0 +1,40 @@
+HCC1395 VEP SUMMARY
+===================
+
+Total PASS variants: 1582
+Variants with gene symbols: 1558
+Missense variants: 347
+Synonymous variants: 83
+Splice-related variants: 94
+
+IMPACT DISTRIBUTION
+-------------------
+IMPACT
+MODIFIER    1015
+MODERATE     358
+LOW          127
+HIGH          82
+
+TOP CONSEQUENCES
+-----------------
+Consequence
+intron_variant                                                              598
+missense_variant                                                            325
+3_prime_UTR_variant                                                         188
+synonymous_variant                                                           76
+3_prime_UTR_variant&NMD_transcript_variant                                   66
+5_prime_UTR_variant                                                          62
+intron_variant&non_coding_transcript_variant                                 50
+intron_variant&NMD_transcript_variant                                        19
+stop_gained                                                                  19
+frameshift_variant                                                           19
+splice_polypyrimidine_tract_variant&intron_variant                           17
+upstream_gene_variant                                                        16
+missense_variant&NMD_transcript_variant                                      13
+splice_region_variant&splice_polypyrimidine_tract_variant&intron_variant     12
+inframe_deletion                                                             11
+missense_variant&splice_region_variant                                        9
+splice_acceptor_variant                                                       8
+splice_region_variant&intron_variant                                          7
+downstream_gene_variant                                                       6
+non_coding_transcript_exon_variant                                            6

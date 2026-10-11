@@ -1,0 +1,58 @@
+TRIM36 VARIANT IGV REVIEW
+========================
+
+Project:
+  Educational HCC1395 tumor/normal WES somatic-variant analysis
+
+Variant:
+  Coordinate: chr5:115130597 (GRCh38)
+  Reference allele: ACTAACTG
+  Alternate allele: A
+  Net deletion length: 7 bases
+  Gene: TRIM36
+  Consequence: frameshift_variant (HIGH)
+  Transcript: ENST00000282369.8
+  HGVS c.: c.1820_1826del
+  HGVS p.: p.Ala607ValfsTer27
+
+Mutect2 PASS VCF evidence:
+  Tumor genotype: 0/1
+  Tumor AD: 0,94
+  Tumor depth: 94
+  Tumor AF: 0.990
+  Normal genotype: 0/0
+  Normal AD: 117,0
+  Normal depth: 117
+  TLOD: 417.92
+  NLOD: 32.72
+  AS_SB_TABLE: 85,32|77,17
+
+Tumor reads manually inspected:
+  1. SRR37849527.27055454
+     MAPQ 60; CIGAR 14M7D86M; no clipping; F1R2;
+     NM 7; AS 87; XS 0.
+
+  2. SRR37849527.27055501
+     MAPQ 60; CIGAR 33M7D67M; no clipping; F2R1;
+     NM 7; AS 87; XS 0.
+
+Matched-normal read manually inspected:
+  SRR37849526.23985081
+  MAPQ 60; CIGAR 100M; no clipping; F2R1;
+  base A at chr5:115130601, QV 33; NM 0; AS 100; XS 0.
+  The read spans the deletion region with an uninterrupted alignment.
+
+Technical interpretation:
+  - Two inspected tumor reads consistently show the same 7-base deletion.
+  - The inspected reads represent both F1R2 and F2R1 categories.
+  - Tumor reads have high mapping quality and no clipping.
+  - The inspected normal read supports an uninterrupted reference alignment.
+  - VCF allele depths show 94 alternate-supporting tumor reads and
+    117 reference-supporting normal reads, with no alternate-supporting
+    normal reads in AD.
+  - This is preliminary technical evidence for a tumor-enriched deletion.
+  - A frameshift annotation does not establish pathogenicity or driver status.
+  - No clinical interpretation is intended.
+
+Status:
+  Preliminary IGV review recorded.

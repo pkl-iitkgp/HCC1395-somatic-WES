@@ -1,0 +1,51 @@
+# Raw and processed sequencing data
+data/
+alignment/
+reference/
+
+# Large annotation resources and caches
+annotation/annovar/annovar/
+annotation/annovar/humandb/
+annotation/vep/cache/
+annotation/funcotator/*.tar.gz
+
+# Sequencing and alignment files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sam
+*.bam
+*.bam.bai
+*.bai
+*.cram
+*.crai
+
+# Reference indexes and large temporary files
+*.dict
+*.fai
+*.tmp
+*.temp
+*.swp
+*~
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Logs and machine-specific output
+logs/
+
+# Unfinished annotation workflows: retain locally, do not publish
+annotation/annovar/
+annotation/funcotator/

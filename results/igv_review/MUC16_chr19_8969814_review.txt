@@ -1,0 +1,70 @@
+MUC16 VARIANT IGV REVIEW
+========================
+
+Project:
+  Educational HCC1395 tumor/normal WES somatic-variant analysis
+
+Variant:
+  Coordinate: chr19:8969814 (GRCh38)
+  Reference allele: ACGTGGAATTTCCTTGTG
+  Alternate allele: A
+  Net deletion length: 17 bases
+  VEP gene: MUC16
+  Consequence: frameshift_variant (HIGH)
+  Transcript: ENST00000397910.9
+  HGVS c.: c.9524_9540del
+  HGVS p.: p.Ala3175ValfsTer111
+
+Mutect2 PASS VCF evidence:
+  Tumor genotype: 0/1
+  Tumor AD: 0,96
+  Tumor depth: 96
+  Tumor AF: 0.991
+  Normal genotype: 0/0
+  Normal AD: 157,0
+  Normal depth: 157
+  TLOD: 432.03
+  NLOD: 42.92
+  AS_SB_TABLE: 102,55|55,41
+
+Tumor reads manually inspected:
+  1. SRR37849527.83511554
+     MAPQ 60; CIGAR 53M17D47M; no clipping; F2R1;
+     NM 18; AS 72; XS 19.
+
+  2. SRR37849527.83511467
+     MAPQ 60; CIGAR 66M17D34M; no clipping; F1R2;
+     NM 18; AS 72; XS 19.
+
+  3. SRR37849527.83511422
+     MAPQ 60; CIGAR 80M17D20M; no clipping; F1R2;
+     NM 18; AS 76; XS 19.
+
+Matched-normal read observations:
+  - Two reads were inspected near the locus:
+    SRR37849526.67433044 and SRR37849526.67432991.
+  - Both MAPQ 60, CIGAR 100M, no clipping, and show T near
+    positions 8969822-8969823.
+  - These two individual reads were not confirmed to span the entire
+    deletion interval.
+  - The user reports that the normal IGV track shows uninterrupted
+    reference sequence across the deletion region.
+  - VCF normal AD is 157 reference-supporting and 0 alternate-supporting
+    reads.
+
+Technical interpretation:
+  - The deletion is consistently represented in three inspected tumor
+    reads and appears in both F1R2 and F2R1 orientation categories.
+  - The tumor has high alternate allele fraction and strong caller
+    evidence.
+  - MUC16 is a large repetitive mucin gene; local sequence complexity
+    and alignment behavior warrant caution.
+  - NM 18 is consistent with the 17-base CIGAR deletion plus one
+    additional edit under the usual edit-distance definition.
+  - Evidence is preliminary and does not establish biological function,
+    pathogenicity, or cancer-driver status.
+  - No clinical interpretation is intended.
+
+Status:
+  Preliminary IGV review recorded; normal-track visual observation
+  noted, with individual full-span normal-read confirmation limited.

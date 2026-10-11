@@ -1,0 +1,45 @@
+Candidate: C8orf76 insertion
+Reference genome: GRCh38
+VCF record: chr8:123220221 A>AGGGCTAC
+VCF filter: PASS
+VEP consequence: frameshift_variant
+VEP impact: HIGH
+Reported protein consequence: p.Leu342ArgfsTer15
+
+Mutect2 evidence:
+  Tumor DP: 195
+  Tumor reference reads: 0
+  Tumor alternate reads: 195
+  Tumor AF: 0.995
+  Normal DP: 78
+  Normal reference reads: 78
+  Normal alternate reads: 0
+  Normal reported AF: 0.012
+  TLOD: 862.66
+  NLOD: 22.52
+  Repeat annotation: STR
+  Repeat unit: GGGCTAC
+
+IGV observations:
+  Multiple tumor reads showed the GGGCTAC insertion.
+  One inspected tumor read had CIGAR 26M7I67M, MAPQ 60,
+  and no clipping.
+  A second tumor read had CIGAR 93M7S and MAPQ 60.
+  Reported insertion base qualities were approximately Q30-Q38.
+  Two inspected normal reads spanned the site with CIGAR 100M
+  and did not show the insertion.
+  The insertion was reported visually in multiple tumor reads
+  at the same position.
+
+Interpretation:
+  Evidence is supportive of a tumor-enriched insertion in this dataset.
+  The short tandem repeat context warrants careful assessment of
+  local alignment and repeat-associated artifacts.
+  HIGH impact and a predicted frameshift do not establish pathogenicity,
+  driver status, or clinical significance.
+
+Limitations:
+  IGV review was qualitative and used selected reads.
+  Only two normal reads were individually inspected.
+  Independent validation and further biological interpretation
+  would be required for stronger conclusions.

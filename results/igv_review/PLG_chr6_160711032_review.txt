@@ -1,0 +1,39 @@
+Candidate: PLG deletion
+Reference genome: GRCh38
+VCF record: chr6:160711032 GGTGTCTTGTGAAA>G
+VCF filter: PASS
+VEP consequence: splice_acceptor_variant &
+                splice_polypyrimidine_tract_variant &
+                intron_variant
+VEP impact: HIGH
+
+Mutect2 evidence:
+  Tumor DP: 373
+  Tumor reference reads: 5
+  Tumor alternate reads: 368
+  Tumor AF: 0.989
+  Normal DP: 452
+  Normal reference reads: 452
+  Normal alternate reads: 0
+  Normal reported AF: 0.002286
+  TLOD: 1644.07
+  NLOD: 128.36
+
+IGV observations:
+  Multiple tumor reads showed a 13-base deletion.
+  Inspected tumor reads had MAPQ 47-60 and no clipping.
+  Both F1R2 and F2R1 read-orientation categories were observed.
+  Deletion gaps aligned at a consistent genomic position.
+  No obvious cluster of mismatches around the breakpoints was observed.
+  Two inspected normal reads aligned without a deletion.
+
+Interpretation:
+  Read-level observations and Mutect2 evidence are supportive of a
+  tumor-enriched deletion in this dataset. This is a preliminary
+  technical review, not proof of pathogenicity, driver status, or
+  clinical significance. Further biological interpretation and
+  independent validation would be needed for stronger conclusions.
+
+Limitations:
+  IGV inspection was qualitative and involved selected reads.
+  The review does not establish clinical validity or causality.

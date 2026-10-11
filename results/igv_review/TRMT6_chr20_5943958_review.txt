@@ -1,0 +1,66 @@
+TRMT6 VARIANT IGV REVIEW
+========================
+
+Project:
+  Educational HCC1395 tumor/normal WES somatic-variant analysis
+
+Variant:
+  Coordinate: chr20:5943958 (GRCh38)
+  Reference allele: C
+  Alternate allele: A
+  VEP gene: TRMT6
+  Consequence: stop_gained (HIGH)
+  Transcript: ENST00000203001.7
+  HGVS c.: c.532G>T
+  HGVS p.: p.Gly178Ter
+
+Mutect2 PASS VCF evidence:
+  Tumor genotype: 0/1
+  Tumor AD: 74,128
+  Tumor depth: 202
+  Tumor AF: 0.622
+  Normal genotype: 0/0
+  Normal AD: 200,0
+  Normal depth: 200
+  TLOD: 402.84
+  NLOD: 54.18
+  AS_SB_TABLE: 132,142|59,69
+
+Tumor reads manually inspected:
+  1. SRR37849527.86931117
+     MAPQ 60; CIGAR 100M; no clipping; F2R1;
+     base A at variant, QV 34; NM 1; AS 95.
+
+  2. SRR37849527.86931057
+     MAPQ 60; CIGAR 100M; no clipping; F2R1;
+     base A at variant, QV 34; NM 1; AS 95.
+
+  3. SRR37849527.86930982
+     MAPQ 60; CIGAR 100M; no clipping; F2R1;
+     base A at variant, QV 33; NM 1; AS 95.
+
+  4. SRR37849527.86930977
+     MAPQ 60; CIGAR 100M; no clipping; F2R1;
+     base A at variant, QV 33; NM 1; AS 95.
+
+Matched-normal read manually inspected:
+  SRR37849526.70460346
+  MAPQ 60; CIGAR 100M; no clipping; F2R1;
+  base C at variant, QV 36; NM 0; AS 100.
+
+Technical interpretation:
+  - The tumor has substantial alternate-allele support (128 of 202 reads).
+  - The inspected tumor reads consistently support A with good base and
+    mapping qualities and no clipping.
+  - The inspected normal read supports the reference C allele.
+  - The VCF reports alternate-read support in both F1R2 and F2R1
+    orientation categories, but the manually inspected tumor reads above
+    are all labeled F2R1.
+  - This is preliminary technical evidence of a tumor-enriched variant,
+    not proof of biological function, pathogenicity, or driver status.
+  - Stop-gained consequence is a transcript-based prediction.
+  - No clinical interpretation is intended.
+
+Status:
+  Preliminary IGV review recorded; additional independent read-level
+  confirmation is optional before final candidate prioritization.
