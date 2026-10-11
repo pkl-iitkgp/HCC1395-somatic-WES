@@ -1,0 +1,28 @@
+HCC1395 Somatic WES Project
+Software environment report
+Generated: 2026-10-11T12:27:08+05:30
+
+Python 3.9.7
+pandas 2.3.3
+numpy 1.26.4
+matplotlib 3.9.4
+
+The Genome Analysis Toolkit (GATK) v4.3.0.0
+HTSJDK Version: 3.0.1
+Picard Version: 2.27.5
+
+Program: bwa (alignment via Burrows-Wheeler transformation)
+Version: 0.7.17-r1188
+samtools 1.21
+Using htslib 1.21
+bcftools 1.21
+Using htslib 1.21
+fastp 0.22.0
+multiqc, version 1.35
+
+VEP version:
+#----------------------------------#
+# ENSEMBL VARIANT EFFECT PREDICTOR #
+#----------------------------------#
+
+Versions:
